@@ -1,0 +1,37 @@
+<h2>User List</h2>
+<table class="table-table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Password</th>
+            <th>City</th>
+         </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor ="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.password}}</td>
+        <td>{{user.city}}</td>
+        <td>
+         <input type="button" value="delete" class="btn btn-danger" (click)="delete(user.id)"/>
+         &nbsp;&nbsp;&nbsp;&nbsp;
+         <input type="button" value="modify" class="btn btn-primary" (click)="adduser()" />
+         &nbsp;&nbsp;&nbsp;&nbsp;
+         <input type="button" value="View Userinfo" class="btn btn-success" (click)="getuserbyId(user.id)"/>
+         &nbsp;&nbsp;&nbsp;&nbsp;
+         </td>
+
+</tr>
+         
+    </tbody>
+    <br/>
+
+</table>
+<div>
+    
+</div>
+
+
+

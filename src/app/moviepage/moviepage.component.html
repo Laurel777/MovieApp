@@ -1,0 +1,22 @@
+<div class="container">
+    <img [src]="movie.imageUrl" [alt]="movie.mname"/>
+</div>
+<div class="details">
+    <div class="header">
+        <span class="name">
+            {{movie.mname}}
+        </span>
+        
+    </div>
+    <div class="price">
+        <span class="name">
+            {{movie.mprice}}
+        </span>
+    </div>
+    <div class="timing">
+        <span class="name">
+            {{movie.mtiming}}
+        </span>
+    </div>
+<button (click)="Bookticket()">Book ticket</button>
+</div>

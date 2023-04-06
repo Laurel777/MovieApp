@@ -1,0 +1,32 @@
+<div class="text-center">
+    <h2>Welcome to MovieApp Booking center</h2>
+    <br/>
+    <h3>Following are the list of movie shows that are going on</h3>
+</div>
+<app-search></app-search>
+
+
+<ul>
+<li *ngFor="let movie of movies">
+    <a routerLink="/movie/{{movie.id}}"> 
+    <img src="{{movie.imageUrl}}" alt="movie images">
+    <div class="content">
+        <div name ="name">
+            {{movie.mname}}
+        </div>
+        <div name ="price">
+            {{movie.mprice}}
+        </div>
+        <div name ="timimg">
+            {{movie.mtiming}}
+        </div>
+        <div name ="language">
+            {{movie.mlanguage}}
+        </div>
+
+    </div>
+</a>
+</li>
+
+
+</ul>

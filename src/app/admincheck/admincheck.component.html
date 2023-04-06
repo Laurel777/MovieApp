@@ -1,0 +1,19 @@
+<div class="text-center" class="container" >
+    <h2>Welcome to MovieApp Admin Login Page</h2>
+    <br>
+    <form [formGroup]="LoginForm" (ngSubmit)="checkLogin()" >
+    <label>Please enter Username</label>
+    <br/>
+    
+    <input type="text"  [(ngModel)]="usr.name" name="name" class="form-control" formControlName="Username"/>
+    <br/>
+    <br/>
+    <label>Please enter Password</label>
+    <br/> 
+    <input type="text"   [(ngModel)]="usr.password" name="password" class="form-control" formControlName="Password"/>
+    <br/>
+    <br/>
+    <input type="Submit" value="Login"  />
+</form>
+</div>
+

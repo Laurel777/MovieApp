@@ -1,0 +1,25 @@
+<div class="text-center" class="container" >
+    <h2>Welcome to Kitchen Story User Register Page</h2>
+    <br>
+    <form  (ngSubmit)="SaveUser()" >
+    <label>Please enter Username</label>
+    <br/>
+    <input type="text"   name="name" class="form-control" formControlName="Username"/>
+    <br/>
+    <label>Please enter Password</label>
+    <br/> 
+    <input type="text"    name="password" class="form-control" formControlName="Password"/>
+    <br/>
+    <label>Please enter Age </label>
+    <br/> 
+    <input type="text"    name="age" class="form-control" formControlName="Age"/>
+    <br/>
+    <label>Please enter City</label>
+    <br/> 
+    <input type="text"    name="city" class="form-control" formControlName="City"/>
+    <br/>
+   
+    <input type="Submit" value="Register"  />
+</form>
+</div>
+

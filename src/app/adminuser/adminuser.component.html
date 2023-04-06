@@ -1,0 +1,21 @@
+
+<div class="text-center" class="container" >
+    <h2>Welcome to Kitchen Story User Login Page</h2>
+    <br>
+    <form [formGroup]="RenewForm" (ngSubmit)="SaveUser()" >
+    <label>Please enter Username</label>
+    <br/>
+    <input type="text"  [(ngModel)]="usr.name" name="name" class="form-control" formControlName="Username"/>
+    <br/>
+    <label>Please enter Password</label>
+    <br/> 
+    <input type="text"   [(ngModel)]="usr.password" name="password" class="form-control" formControlName="Password"/>
+    <br/>
+   
+    <input type="Submit" value="Save"  />
+</form>
+</div>
+
+
+
+
